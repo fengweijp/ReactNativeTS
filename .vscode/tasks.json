@@ -10,5 +10,9 @@
         "isBuildCommand": true,
         "taskName": "build",
         "problemMatcher": "$tsc"
+    }, {
+        "isBackground": true,
+        "taskName": "watch",
+        "problemMatcher": "$tsc-watch"
     }]
 }
