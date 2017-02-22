@@ -25,7 +25,7 @@ export default class HelloWorld extends Component<Props, State> {
         counter: 0,
     };
 
-    onPress = () => {
+    onPress() {
         const counter = this.state.counter + 1;
         if (counter < this.props.max) {
             return this.setState({ counter });
@@ -40,7 +40,7 @@ export default class HelloWorld extends Component<Props, State> {
 
         return (
             <View style={this.props.style}>
-                <Button onPress={this.onPress}>
+                <Button onPress={() => this.onPress()}>
                     {message} ({counter})
                 </Button>
             </View>
