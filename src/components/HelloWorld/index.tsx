@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, ViewStyle, Text } from "react-native";
 
 // See src/declarations.d.ts
 import Button from "react-native-button";
@@ -8,7 +8,7 @@ interface Props {
     max: number;
     message?: string | number;
     alert?: string | number;
-    style: React.ViewStyle;
+    style: ViewStyle;
 }
 
 interface State {

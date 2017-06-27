@@ -2,10 +2,11 @@
 
 declare module "react-native-button" {
     import React, { Component } from "react";
+    import { ViewStyle } from "react-native";
 
     interface Props {
-        style?: React.ViewStyle;
-        styleDisabled?: React.ViewStyle;
+        style?: ViewStyle;
+        styleDisabled?: ViewStyle;
         onPress?: () => any;
     }
 
